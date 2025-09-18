@@ -34,3 +34,10 @@ git init
 ## En el caso de que no haya colocado en la instalación main
 ´´´´sh
 git config --global init-defaultBranch
+
+## Ver loc commits generado (Timeline de commits)
+´´´´sh
+git log # versión larga
+git log --oneline # versión corta
+´´´´
+
