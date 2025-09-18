@@ -41,3 +41,7 @@ git log # versión larga
 git log --oneline # versión corta
 ´´´´
 
+## Estados de los archivos en un repositorio de GIT
+
+
+## Areas posibles en las que pueden estar los archivos 
