@@ -45,3 +45,12 @@ git log --oneline # versión corta
 
 
 ## Areas posibles en las que pueden estar los archivos 
+
+
+## Ayuda comandos
+´´´´sh
+git <comando> --help
+git status --help
+git remote --help
+git commit --help
+´´´´
