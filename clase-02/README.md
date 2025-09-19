@@ -14,7 +14,7 @@ Osea marcar archivos que están en el working directory terminado y quiero lleva
 ´´´´´sh
 git add <nombre-archivo1> <nombre-achivo2>
 git add <nombre-archivo>
-git add <nombre-archivo>
+git add README.md 
 ´´´´
 
 ### Ver el conenido de un commit hecho
@@ -31,4 +31,19 @@ git commit -a # Se hace un add de los archivos modificados, no se hace un add de
 git commit -am "Mensaje" # Se agregan los archivos modificados y no se abre el editor para escribir el mensaje 
 ´´´´
 
-**NOTA**: Los mensajes idealmente pueden tener máximo 80 caracteres.  
+**NOTA**: Los mensajes idealmente pueden tener máximo 80 caracteres.  a
+
+#### Ver los commits dentro del repositorio
+
+´´´´sh
+git log # largo con detalle
+git log --oneline # corto solo el mensaje
+git log -2 # Me muestra 2 commits del listado, los últimos 2
+git log --oneline -2 # corto solo el mensaje y solo 2 commits los últimos
+´´´´
+
+### Ver la diferencia entre el working directory y el local repo 
+
+´´´´sh
+git diff
+´´´´
