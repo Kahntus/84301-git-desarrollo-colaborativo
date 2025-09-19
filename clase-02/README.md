@@ -15,3 +15,20 @@ Osea marcar archivos que están en el working directory terminado y quiero lleva
 git add <nombre-archivo1> <nombre-achivo2>
 git add <nombre-archivo>
 git add <nombre-archivo>
+´´´´
+
+### Ver el conenido de un commit hecho
+´´´´sh
+git show <hash>
+git show 916a21e
+´´´´
+
+### Guardar los cambios en el repositorio
+´´´´sh
+git commit -m "Mensaje"
+git commit # Se abre el editor para escribir el mensaje 
+git commit -a # Se hace un add de los archivos modificados, no se hace un add de los archivos untracked y se abre el editor para escribir el mensaje
+git commit -am "Mensaje" # Se agregan los archivos modificados y no se abre el editor para escribir el mensaje 
+´´´´
+
+**NOTA**: Los mensajes idealmente pueden tener máximo 80 caracteres.  
