@@ -108,7 +108,7 @@ git config --global alias.c "commit -m"
 git config --get-regexp alias
 ´´´´
 
-# Fusiones y merges
+# Tipos de funsiones (Merges)
 
 * Fast-forward -> Automatico -> Soluciona git (No crea commit de fusión)
 * Triple vía -> Automatico -> Soluciona git (Si crea commit de fusión)
