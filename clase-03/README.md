@@ -107,3 +107,9 @@ git config --global alias.c "commit -m"
 ´´´´´sh
 git config --get-regexp alias
 ´´´´
+
+# Fusiones y merges
+
+* Fast-forward -> Automatico -> Soluciona git (No crea commit de fusión)
+* Triple vía -> Automatico -> Soluciona git (Si crea commit de fusión)
+* Conflicto -> Manual -> No lo soluciona git, tengo que trabajar yo. (Se crea commit soluión) 
