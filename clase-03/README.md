@@ -1,0 +1,103 @@
+# Clase 03 - Git desarrollo colaborativo
+
+## Estado de los archivos
+
+´´´´sh
+git status
+´´´´´
+
+## Agregar a la zona de staging area o index (Área de confirmación)
+
+´´´´sh
+git add <nombre-archivo>
+git add . # todos los archivos
+´´´´´
+
+## Persistir los archivos que coloco en el staging area (Hacer commit)
+
+´´´´sh
+git commit -m 'Mensaje'
+git commit # abre un editor de texto
+
+## Ver los commits
+
+´´´´´
+git log # forma larga
+git log --oneline # forma corta
+git log -5 # cantidad de commits que quiero que muestre.
+´´´´
+
+## Como veo la diferencia enter o que tengo en el WD y LR
+
+´´´´sh
+git diff
+´´´´
+
+## La diferencia entre 2 ramas. La rama main y la rama dev
+
+´´´´sh
+git diff <nombre-rama>
+### Ejemeplo
+git switch main
+git diff dev
+´´´´´
+
+## Como arreglo el mensaje de un commit (El último)
+
+´´´´sh
+git commit --amend
+´´´´
+
+**IMPORTANTE**: Además de corregir el mensaje puedo agregar archivos que olvide dentro del commit 
+
+´´´´sh
+git add <archivo-que-me-olvide>
+git commit --amend
+´´´´´
+
+## Crear una rama
+
+´´´´sh
+git branch <nombre-rama>
+´´´´´
+
+## Cambiarse de rama
+
+´´´´sh
+git switch <nombre-rama>
+´´´´
+
+## Fusionar 2 ramas
+
+´´´´´sh
+git merge <nombre-rama>
+### Si me quiero traer los cambios que esta en dev a la rama main
+git switch main
+git merge dev
+´´´´
+
+## Hacer un commit sin cambiar el mensaje pero agregando archivos o línea de código que nos falto guardar dentro del commit
+
+´´´´´sh
+git add . # agrego archivos o líneas fueron modificadas
+git commit --amend --no-edit # Evito cambiar el mensaje
+´´´´
+
+## Agregar modificaiones de archivos granularmente (Agregar partes del código agregado en un archivo)
+
+´´´´sh
+git add --patch
+´´´´
+
+# Git alias
+
+## Crear un alias
+
+´´´´sh
+git config --global alias.s "commit"   
+git config --global alias.sc "status --short"   
+git config --global alias.ll"log"   
+git config --global alias.l "log --oneline"   
+git config --global alias.amend "commit --amend --no-edit"
+git config --global alias.c "commit -m"   
+´´´´
