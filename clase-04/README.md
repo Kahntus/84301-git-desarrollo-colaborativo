@@ -31,3 +31,43 @@ git stash show stash{0}
 ´´´´sh
 git stash pop # Recuperar el último stash realizado y si no hay conflicto lo borra.
 ´´´´
+
+## Aplicar un stash en particular
+
+´´´´sh
+git stash aplly 1 # stash@{1}
+git stash aplly 2 # stash@{2}
+´´´´
+
+## Eliminar un stash en particular
+
+´´´´´sh
+git stash drop # Borra el stash de arriba de todo
+git stash drop 1 # stash@{1}
+git stash drop 1 # stash@{2}
+
+
+# Git resets
+Me permite deshacer commmits. Hay 3 tipos
+
+## GIT RESET SOFT
+Me permite deshacer uno o varios commits y los cambios lo arroja al staging area (SA)
+
+´´´´sh
+git reset --soft <hash>
+´´´´
+
+## GIT RESET MIXED (default)
+Me permite deshacer uno o varios commits y los cambios los arroja al working directory (WD)
+
+´´´´´sh
+git reset <hash>
+git reset --mixed <hash>
+´´´´
+
+## GIT RESET HARD
+Me permite deshacer uno o varios commits y los cambios los descarta (CUIDADO PIERDO LOS CAMBIOS SOBRE LOS ARCHIVOS)
+
+´´´´sh
+git reset --hard <hash>
+´´´´
